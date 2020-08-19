@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+.header {
+  text-align: center;
+}
+
+.row {margin: 0 -5px;}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    background-color: #EFEFEF;
+}
+
+.left {
+  padding:20px;
+  float:left;
+  width:75%; 
+}
+
+
+.right {
+  padding:20px;
+  float:left;
+  width:25%;
+  text-align: center;
+}
+
+.rightColumn {
+  width: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px 0;
+  color: #FFFFFF;
+  height:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  float:right;
+}
+
+[class*="card-left-"] {
+  width:0;
+}
+
+.card-1, .card-8 {
+ background-color: #6f98A8;
+}
+
+.card-2, .card-4 {
+ background-color: #72C3DC;
+}
+
+.card-3, .card-5, .card-9 {
+ background-color: #2F454E;
+}
+
+.card-6, .card-7 {
+ background-color: #BFBFBF;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #EFEFEF;
+}
+body {
+	background-color: #EFEFEF;
+}
+
+@media screen and (max-width: 392px) {
+  .column {
+    width: 100%;
+    display: block;
+    padding-bottom:4px;
+  }
+  .rightColumn {
+    width: 50%;
+    float:left;
+    padding-right: 10px;
+
+  }
+  .left {
+  width: 100%;
+  order: 2;
+  }
+    .right {
+  width: 100%;
+  order: 1;
+  }
+
+  .header {
+  color: white;
+  background-color: #2F454E;
+  }
+  body {
+	background-color: #000000;
+ }
+  
+  .card {
+   background-color: #BFBFBF;
+   color: #000000;
+   height:50px;
+   text-align: center;
+   width: 98%;
+   float:right;
+  }
+  .card-left-1, .card-left-8 {
+ background-color: #6f98A8;
+ height:50px;
+   text-align: center;
+  display: block;
+  width:2%;
+  float:left;
+}
+
+.card-left-2, .card-left-4 {
+ background-color: #72C3DC;
+ height:50px;
+   text-align: center;
+  display: block;
+  width:2%;
+  float:left;
+}
+
+.card-left-3, .card-left-5, .card-left-9 {
+ background-color: #2F454E;
+ height:50px;
+   text-align: center;
+  display: block;
+  width:2%;
+  float:left;
+}
+
+.card-left-6, .card-left-7 {
+ background-color: #BFBFBF;
+ height:50px;
+   text-align: center;
+  display: block;
+  width:2%;
+  float:left;
+}
+
+}
+.button {
+  background-color: #72C3DC;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 100%;
+}
